@@ -1,6 +1,45 @@
 History
 =======
 
+## Version ?.?.? (next version, pup2.1.1 overhaul)
+
+* [populate me]
+
+## Version 0.2.6
+
+* Change build backend to poetry-core (allows for faster PEP517 package building) #262 @fabaff
+* Chromium download fixes (file not found) #245 @mborsetti
+* Do not try to set an exception on finished futures #216 @polyfloyd
+* Add HTTPException to caught exceptions in launch #293 @raymondguo-db
+* Fix encoding error #226 @aleksei140888
+* support websockets 9.0 #252 @mborsetti
+* Fix tqdm exception when NO_PROGRESS_BAR is True #224 @mborsetti
+* fix(browser): Clean up coroutine Browser._targetCreated() #271 @H--o-I
+
+## Version 0.2.5
+
+* Match package version and \_\_version__ (🤦‍♂️)
+* Use `importlib_metadata` so this isn't a problem in the future
+
+## Version 0.2.4
+
+* Update `pyee` dependency breaking build failures on NixOS + Fedora packaging systems (#207)
+
+## Version 0.2.3
+
+* Hotfix: random freezes from sending stdout to PIPE instead of DEVNULL
+* Fix `tests` package being installed for no reason
+
+## Version 0.0.26
+
+* Add `$PYPPETEER_NO_PROGRESS_BAR` environment variable
+* `pyppeteer.defaultArgs` now accepts that help infer chromium command-line flags.
+* `pyppeteer.launch()` argument `ignoreDefaultArgs` now accepts a list of flags to ignore.
+* `Page.type()` now supports typing emoji
+* `Page.pdf()` accepts a new argument `preferCSSPageSize`
+* Add new option `defaultViewport` to `launch()` and `connect()`
+* Add `BrowserContext.pages()` method
+
 ## Version 0.0.25 (2018-09-27)
 
 * Fix miss-spelled methods and functions
